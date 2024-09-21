@@ -3,7 +3,7 @@ import { Nav } from "@/app/utils/reusable";
 import { StaticImageData } from "next/image";
 
 interface HeaderProps {
-  navText: string;
+  navText?: string;
   navIcon?: StaticImageData;
 }
 

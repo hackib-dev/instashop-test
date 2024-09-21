@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import BackArrow from "../../assets/backArroow.png";
 
 interface NavProps {
-  navText: string;
+  navText?: string;
   navIcon?: StaticImageData;
 }
 
