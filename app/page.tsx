@@ -1,4 +1,4 @@
-import WelcomePage from "./welcome/page";
+import { WelcomePage } from "./welcome/page";
 import { welcomeMessage, theme } from "./welcome/constants";
 
 export default function App() {
