@@ -1,10 +1,16 @@
-import Welcome from "@/components/Welcome/ssg/welcome";
-import { WelcomePageProps } from "@/components/Welcome/types";
+// app/welcome/page.tsx
 
-export const WelcomePage = ({ welcomeMessage, theme }: WelcomePageProps) => {
+import Welcome from "@/components/Welcome/ssg/welcome";
+
+const WelcomePage = async () => {
+  const welcomeMessage = "Welcome";
+  const theme = "The safest platform to shop from social media vendors";
+
   return (
     <div>
       <Welcome welcomeMessage={welcomeMessage} theme={theme} />
     </div>
   );
 };
+
+export default WelcomePage;
