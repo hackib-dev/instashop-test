@@ -8,5 +8,3 @@ const WelcomePage = ({ welcomeMessage, theme }: WelcomePageProps) => {
     </div>
   );
 };
-
-export default WelcomePage;
