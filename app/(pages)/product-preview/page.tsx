@@ -100,8 +100,8 @@ const ProductPreview = () => {
             <p className="text-xs text-primary-lightblack font-medium">
               Size: SMALL
             </p>
-            <div className="grid grid-cols-6 gap-1">
-              <Badge text="Filter" bgColor={"black"} textColor="text-white" />
+            <div className="grid grid-cols-6  gap-1">
+              <Badge text="Filter" bgColor="black" textColor="text-white" />
               <Badge text="Filter" bgColor={"primary-light_grey"} />
               <Badge text="Filter" bgColor={"primary-light_grey"} />
               <Badge text="Filter" bgColor={"primary-light_grey"} />
