@@ -85,7 +85,7 @@ const ProductPreview = () => {
                 </p>
                 <Badge
                   text="25% OFF"
-                  bgColor="primary-purple"
+                  bgColor="bg-primary-purple"
                   textColor="text-white"
                 />
               </div>
@@ -101,21 +101,21 @@ const ProductPreview = () => {
               Size: SMALL
             </p>
             <div className="grid grid-cols-6  gap-1">
-              <Badge text="Filter" bgColor="black" textColor="text-white" />
-              <Badge text="Filter" bgColor={"primary-light_grey"} />
-              <Badge text="Filter" bgColor={"primary-light_grey"} />
-              <Badge text="Filter" bgColor={"primary-light_grey"} />
-              <Badge text="Filter" bgColor={"primary-light_grey"} />
-              <Badge text="Filter" bgColor={"primary-light_grey"} />
+              <Badge text="Filter" bgColor="bg-black" textColor="text-white" />
+              <Badge text="Filter" bgColor={"bg-primary-light_grey"} />
+              <Badge text="Filter" bgColor={"bg-primary-light_grey"} />
+              <Badge text="Filter" bgColor={"bg-primary-light_grey"} />
+              <Badge text="Filter" bgColor={"bg-primary-light_grey"} />
+              <Badge text="Filter" bgColor={"bg-primary-light_grey"} />
             </div>
 
             <p className="text-xs text-primary-lightblack font-medium">
               Color: White
             </p>
             <div className="grid grid-cols-6 gap-1">
-              <Badge text="Filter" bgColor={"primary-light_grey"} />
-              <Badge text="Filter" bgColor={"primary-light_grey"} />
-              <Badge text="Filter" bgColor={"primary-light_grey"} />
+              <Badge text="Filter" bgColor={"bg-primary-light_grey"} />
+              <Badge text="Filter" bgColor={"bg-primary-light_grey"} />
+              <Badge text="Filter" bgColor={"bg-primary-light_grey"} />
             </div>
           </div>
           <hr className="-mx-[20px] bg-primary-dark_grey h-4/5" />
@@ -177,22 +177,22 @@ const ProductPreview = () => {
                   <div className="grid grid-cols-3 ">
                     <Badge
                       text="Quality goods"
-                      bgColor={"primary-light_grey"}
+                      bgColor={"bg-primary-light_grey"}
                     />
-                    <Badge text="Nice designs" bgColor={"primary-light_grey"} />
+                    <Badge text="Nice designs" bgColor={"bg-primary-light_grey"} />
                     <Badge
                       text="Quality goods"
-                      bgColor={"primary-light_grey"}
+                      bgColor={"bg-primary-light_grey"}
                     />
                   </div>
 
                   <div className="grid grid-cols-3 ">
-                    <Badge text="Nice designs" bgColor={"primary-light_grey"} />
+                    <Badge text="Nice designs" bgColor={"bg-primary-light_grey"} />
                     <Badge
                       text="Quality goods"
-                      bgColor={"primary-light_grey"}
+                      bgColor={"bg-primary-light_grey"}
                     />
-                    <Badge text="Nice designs" bgColor={"primary-light_grey"} />
+                    <Badge text="Nice designs" bgColor={"bg-primary-light_grey"} />
                   </div>
                 </div>
               </AccordionContent>

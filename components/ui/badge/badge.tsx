@@ -13,7 +13,7 @@ const Badge = ({ icon, bgColor, border, text, textColor }: BadgeProps) => {
     <div
       className={`flex items-center gap-2 border rounded-2xl py-1 px-3 border-primary-dark_grey w-fit ${
         border ? "border" : "border-none"
-      } ${bgColor ? `bg-${bgColor}` : ""}`}
+      } ${bgColor ? `${bgColor}` : ""}`}
     >
       <p className={`text-sm  ${textColor ? `${textColor}` : ""}`}>{text}</p>
       {icon && <Image src={icon} alt="mark" width={12}></Image>}

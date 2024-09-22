@@ -162,13 +162,13 @@ const ProductDetails = () => {
                       <Badge
                         icon={CloseIcon}
                         text="Collection"
-                        bgColor="primary-light_grey"
+                        bgColor="bg-primary-light_grey"
                       />
 
                       <Badge
                         icon={CloseIcon}
                         text="Interests"
-                        bgColor="primary-light_grey"
+                        bgColor="bg-primary-light_grey"
                       />
                     </div>
                     <p className="text-primary-lightblack font-medium text-sm mt-3">
@@ -391,19 +391,19 @@ const ProductDetails = () => {
                       <Badge
                         icon={CloseIcon}
                         text="Red"
-                        bgColor="primary-light_grey"
+                        bgColor="bg-primary-light_grey"
                       />
 
                       <Badge
                         icon={CloseIcon}
                         text="White"
-                        bgColor="primary-light_grey"
+                        bgColor="bg-primary-light_grey"
                       />
 
                       <Badge
                         icon={CloseIcon}
                         text="Black"
-                        bgColor="primary-light_grey"
+                        bgColor="bg-primary-light_grey"
                       />
                     </div>
                     <p className="text-primary-lightblack font-medium text-sm mt-3">
@@ -427,19 +427,19 @@ const ProductDetails = () => {
                       <Badge
                         icon={CloseIcon}
                         text="Large"
-                        bgColor="primary-light_grey"
+                        bgColor="bg-primary-light_grey"
                       />
 
                       <Badge
                         icon={CloseIcon}
                         text="Small"
-                        bgColor="primary-light_grey"
+                        bgColor="bg-primary-light_grey"
                       />
 
                       <Badge
                         icon={CloseIcon}
                         text="XL"
-                        bgColor="primary-light_grey"
+                        bgColor="bg-primary-light_grey"
                       />
                     </div>
                     <p className="text-primary-lightblack font-medium text-sm mt-3">
@@ -463,19 +463,19 @@ const ProductDetails = () => {
                       <Badge
                         icon={CloseIcon}
                         text="Large"
-                        bgColor="primary-light_grey"
+                        bgColor="bg-primary-light_grey"
                       />
 
                       <Badge
                         icon={CloseIcon}
                         text="Small"
-                        bgColor="primary-light_grey"
+                        bgColor="bg-primary-light_grey"
                       />
 
                       <Badge
                         icon={CloseIcon}
                         text="XL"
-                        bgColor="primary-light_grey"
+                        bgColor="bg-primary-light_grey"
                       />
                     </div>
                     <p className="text-primary-lightblack font-medium text-sm mt-3">
