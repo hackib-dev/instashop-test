@@ -15,7 +15,7 @@ const Header = ({ navText, navIcon }: HeaderProps) => {
     .padStart(2, "0")}:${currentTime.getMinutes().toString().padStart(2, "0")}`;
 
   return (
-    <div className="max-w-sm bg-white fixed top-0 left-0 right-0 z-50 mx-auto">
+    <div className="w-full xl:max-w-sm bg-white fixed top-0 left-0 right-0 z-50 mx-auto">
       <div className="px-5 py-4 bg-white  ">
         <div className="flex gap-6 items-center justify-between mb-8">
           <p className="font-bold">{formattedTime}</p>
@@ -26,7 +26,7 @@ const Header = ({ navText, navIcon }: HeaderProps) => {
           </div>
         </div>
 
-        <Nav navText={navText} navIcon={navIcon} />
+        {navText && <Nav navText={navText} navIcon={navIcon} />}
       </div>
     </div>
   );

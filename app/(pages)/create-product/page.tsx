@@ -385,7 +385,7 @@ const StoreProfile = () => {
                 </Accordion>
               </div>
 
-              <div className="bg-white z-20 fixed left-0 right-0 bottom-0 max-w-sm px-5 flex flex-col items-center border-t border-primary-grey mx-auto">
+              <div className="bg-white z-20 fixed left-0 right-0 bottom-0 w-full xl:max-w-sm px-5 flex flex-col items-center border-t border-primary-grey mx-auto">
                 <div className="flex gap-4  w-full">
                   <Button
                     className="w-full rounded-[90px] bg-white border border-primary-purple text-primary-purple mt-4 mb-11"

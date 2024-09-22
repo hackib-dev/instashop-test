@@ -49,9 +49,9 @@ const StoreProfile = () => {
       <Header navText="Get started" />
       <div className="px-5 pt-20">
         <div className="grid grid-cols-3 pt-7 pb-5 gap-2">
-          <div className="bg-primary-purple  w-28 h-1 rounded-[15px]"></div>
-          <div className="bg-primary-purple  w-28 h-1 rounded-[15px]"></div>
-          <div className="bg-primary-purple  w-28 h-1 rounded-[15px]"></div>
+          <div className="bg-primary-purple   h-1 rounded-[15px]"></div>
+          <div className="bg-primary-purple  h-1 rounded-[15px]"></div>
+          <div className="bg-primary-purple  h-1 rounded-[15px]"></div>
         </div>
         <div>
           <div className="w-full py-4 border border-primary-dark_grey rounded-xl flex flex-col justify-center items-center mb-2">

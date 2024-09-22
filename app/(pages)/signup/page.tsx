@@ -46,9 +46,9 @@ const SignUp = () => {
       <Header navText="Get started" />
       <div className="px-5 pt-20 ">
         <div className="grid grid-cols-3 pt-7 pb-5 gap-2">
-          <div className="bg-primary-purple  w-28 h-1 rounded-[15px]"></div>
-          <div className="bg-primary-grey  w-28 h-1 rounded-[15px]"></div>
-          <div className="bg-primary-grey  w-28 h-1 rounded-[15px]"></div>
+          <div className="bg-primary-purple   h-1 rounded-[15px]"></div>
+          <div className="bg-primary-grey   h-1 rounded-[15px]"></div>
+          <div className="bg-primary-grey   h-1 rounded-[15px]"></div>
         </div>
         <div>
           <p className="text-2xl font-medium mb-4">

@@ -42,7 +42,7 @@ const Welcome = ({ welcomeMessage, theme }: WelcomePageProps) => {
             <p> Reach Millions of Shoppers</p>
           </div>
         </div>
-        <div className="w-full mb-11">
+        {/* <div className="w-full mb-11">
           <Button
             className="w-full rounded-[90px]  shadow-3xl shadow-primary-purple"
             onClick={handleGetStarted}
@@ -52,6 +52,20 @@ const Welcome = ({ welcomeMessage, theme }: WelcomePageProps) => {
         </div>
         <div className="mb-3">
           <Image src={Indicator} alt="indicator" className="w-fit"></Image>
+        </div> */}
+
+        <div className="bg-white z-20 fixed left-0 right-0 bottom-0 w-full xl:max-w-sm px-5 flex flex-col items-center  mx-auto">
+          <Button
+            className="w-full rounded-[90px] shadow-3xl shadow-primary-purple mt-4 mb-11"
+            type="submit"
+            onClick={handleGetStarted}
+            size="lg"
+          >
+            Get Started
+          </Button>
+          <div className="mb-3 text-center items-center">
+            <Image src={Indicator} alt="indicator" className="w-fit"></Image>
+          </div>
         </div>
       </div>
     </div>
