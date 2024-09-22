@@ -1,6 +1,4 @@
-import Header from "@/components/header/page";
 import WelcomePage from "./welcome/page";
-import Footer from "@/components/footer/page";
 
 export default function App() {
   return (

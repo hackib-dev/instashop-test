@@ -29,8 +29,12 @@ import PlusIcon from "../../../assets/plusIcon.png";
 import ImageIcon from "../../../assets/imaegIcon.png";
 import ImgIcon from "../../../assets/imgIcon.png";
 import ConfigureVariants from "@/components/configureVariant/page";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Hamburger from "../../../assets/hamburger.png";
+import { useToast } from "@/hooks/use-toast";
+import { Toaster } from "@/components/ui/toaster";
+import { useEffect } from "react";
+import { PRODUCT_ROUTE } from "@/app/config";
 
 const ProductDetails = () => {
   const router = useRouter();
@@ -67,8 +71,49 @@ const ProductDetails = () => {
     },
   });
 
+  const pathname = usePathname();
+  const { toast } = useToast();
+
+  const {
+    user: { email },
+  } = useAppSelector((state) => state.userState);
+
+  const handleViewProducts = () => {
+    const emailSession = sessionStorage.getItem("userEmail");
+    console.log(emailSession);
+    const sessionData = emailSession ? JSON.parse(emailSession) : null;
+    console.log(sessionData);
+
+    if (!sessionData?.email && !emailSession) {
+      router.push("/signup");
+      toast({
+        variant: "destructive",
+        title: "You are not in session!",
+        description:
+          "Kindly use a valid email address! Redirecting to Login Page...",
+      });
+    }
+
+    if (sessionData && sessionData.email !== email) {
+      router.push("/signup");
+      sessionStorage.clear();
+      toast({
+        variant: "destructive",
+        title: "You are not in session!",
+        description:
+          "Email does not match the current session. Unauthorized access!",
+      });
+      return;
+    }
+
+    if (sessionData && sessionData.email === email) {
+      router.push("/product-preview");
+    }
+  };
+
   return (
     <div className="bg-white min-h-screen relative">
+      <Toaster />
       <Header navText="Product details" navIcon={Hamburger} />
 
       <div className="pt-28 px-5 flex justify-between items-center border-b border-primary-dark_grey pb-3">
@@ -531,9 +576,7 @@ const ProductDetails = () => {
             className="w-full rounded-[90px] shadow-3xl shadow-primary-purple mt-4 mb-11"
             type="submit"
             size="lg"
-            onClick={() => {
-              router.push("/product-preview");
-            }}
+            onClick={handleViewProducts}
           >
             Save
           </Button>

@@ -23,6 +23,11 @@ const ProductSchema = z.object({
   shippingInventoryStocks: z.string(),
 });
 
+const UserSchema = z.object({
+  email: z.string(),
+});
+
+export type User = z.infer<typeof UserSchema>;
 export type Product = z.infer<typeof ProductSchema>;
 export type GlobalStateType = z.infer<typeof GlobalDataSchema>;
 export type RootState = ReturnType<typeof store.getState>;

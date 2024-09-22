@@ -12,4 +12,4 @@ export const API_PATH = process.env.NEXT_PUBLIC_API_PATH || "api";
 
 export const sessionStorageName = "instaShop";
 
-export const DASHBOARD_ROUTE = ["/dashboard"];
+export const PRODUCT_ROUTE = ["/product-preview"];

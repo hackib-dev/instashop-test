@@ -1,9 +1,9 @@
 import { combineReducers } from "@reduxjs/toolkit";
-import globalStateReducer from "./slice/globalState/globalStateSlice";
 import productServiceReducer from "./slice/productService/productService";
+import userServiceReducer from "./slice/userService/userService";
 
 const rootReducer = combineReducers({
-  globalState: globalStateReducer,
+  userState: userServiceReducer,
   productService: productServiceReducer,
 });
 

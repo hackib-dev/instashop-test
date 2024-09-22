@@ -107,7 +107,7 @@ const StoreProfile = () => {
       <div className="pt-28 px-5 flex justify-between items-center border-b border-primary-dark_grey pb-3">
         <Badge border icon={MarkIcon} text="Draft" />
         <p className="text-primary-purple text-sm font-medium">
-          Preveiw product
+          Preview product
         </p>
       </div>
       <div className="px-5">
